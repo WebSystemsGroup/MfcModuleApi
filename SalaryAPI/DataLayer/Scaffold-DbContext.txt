@@ -1,0 +1,2 @@
+﻿Scaffold-DbContext "Server=192.168.34.5;Port=5432;Database=MFC;User Id=postgres;Password=!ShamiL7" -Project DataLayer -Provider Npgsql.EntityFrameworkCore.PostgreSQL -Schemas public -OutputDir "Entities/Models" -ContextDir Concrete -Context SalaryMFCContext
+Scaffold-DbContext "Server=192.168.34.16;Port=5432;Database=mfc_eco;User Id=postgres;Password=!ShamiL19" -Project DataLayer -Provider Npgsql.EntityFrameworkCore.PostgreSQL -Schemas public -OutputDir "Entities/Models" -ContextDir Concrete -Context SalaryMFCContext

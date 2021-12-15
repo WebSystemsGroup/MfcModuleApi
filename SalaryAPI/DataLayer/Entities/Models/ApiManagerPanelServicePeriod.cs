@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+
+#nullable disable
+
+namespace DataLayer.Entities.Models
+{
+    public partial class ApiManagerPanelServicePeriod
+    {
+        public Guid Id { get; set; }
+        public Guid SprEmployeesMfcId { get; set; }
+        public int CountReceivedWeek { get; set; }
+        public int CountExecutedWeek { get; set; }
+        public int CountReceivedMonth { get; set; }
+        public int CountExecutedMonth { get; set; }
+        public int CountExpired { get; set; }
+        public decimal PercentExpired { get; set; }
+        public int CountExpiredStage { get; set; }
+        public decimal PercentExpiredStage { get; set; }
+        public string Commentt { get; set; }
+        public int CountReceivedQuarter { get; set; }
+        public int CountReceivedYear { get; set; }
+        public int CountExecutedQuarter { get; set; }
+        public int CountExecutedYear { get; set; }
+        public int CountExecutionService { get; set; }
+        public int CountExecutionStage { get; set; }
+
+        public Guid ApiManagerPanelServiceDateId { get; set; }
+
+        public virtual SprEmployeesMfc SprEmployeesMfc { get; set; }
+        public virtual ApiManagerPanelServiceDate ApiManagerPanelServiceDate { get; set; }
+    }
+}
